@@ -6,3 +6,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+gstd = { git = "https://github.com/gear-tech/gear.git", features = ["debug"], rev="5c685d0f15c412ab6ee019ceaf7ce084426dfb68" }
+
+[build-dependencies]
+gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git", features = ["wasm-opt"], branch = rev="5c685d0f15c412ab6ee019ceaf7ce084426dfb68" }
+
+[dev-dependencies]
+gtest = { git = "https://github.com/gear-tech/gear.git", branch = rev="5c685d0f15c412ab6ee019ceaf7ce084426dfb68" }
